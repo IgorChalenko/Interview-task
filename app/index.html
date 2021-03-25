@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Interview Task</title>
+</head>
+<body>   
+    <header class="header header_bg">
+        <div class="container">
+            <div class="navigation navigation_flex">
+                <form action="GET" class="search-form">
+                    <label class="search-form__label" for="search"></label>
+                    <input type="text" class=" input search-form__search-field" placeholder="Search for courses, lessons, resources an..." name="search"> 
+                </form>           
+                <nav class="menu navigation__menu">
+                        <a href="#" class="menu__link">All Courses</a>
+                        <a href="#" class="menu__link">For Business</a>
+                        <div class="divider"></div>
+                        <a href="#" class="menu__link">Log In</a>
+                        <a href="#" class="btn-link menu__btn">Get Started</a>                         
+                </nav>
+                <div class="menu menu-hidden">
+                    <img src="img/bar.png" alt="menu-bar" class="menu-hidden__bar" id="menu-bar">
+                    
+                    <div class="menu-hidden__container hidden">
+                        <a href="" class="menu-hidden__link">All Courses</a>
+                        <a href="" class="menu-hidden__link">For Business</a>
+                        <a href="" class="menu-hidden__link">Log In</a>
+                        <a href="" class="menu-hidden__link">Get Started</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <h1 class="main-header main-header_center">Pricing Plans</h1>
+        <p class="semy-header semy-header_center">Upgrade your skills. Choose a plan that works for your budget and career goals.</p>
+    </header>
+    <main>
+        <!---------------------------- Card Section ---------------------------->
+        <section>
+            <div class="container">
+                <div class="card-deck">
+                    <div class="card card_light">
+                        <div class="card__head card__head_blue">Most popular!</div>
+                        <div class="card__holder">   
+                            <p class="card__top-text ">All Access Membership</p>
+                            <h3 class="card__header">Basic</h3>
+                            <p class="card__help-text">Includes all courses from many programs</p>
+                            <h4 class="card__plan">Pick your plan:</h4>
+                            <div class="card__price">
+                                <input type="radio" id="number1" name="price-radio" style="display: none;" checked>
+                                <label for="number1" class="card__radio"><span class="card__cost">$47 <b class="card__cost card__cost_smaller">/month</b></span> (pay annually — $564 / year)</label>            
+                                <input type="radio" id="number2" name="price-radio" style="display: none;">
+                                <label for="number2" class="card__radio" ><span class="card__cost" >$87 <b class="card__cost card__cost_smaller">/month</b></span> (pay per month)</label>
+                            </div>
+                            <div class="card__divider">
+                              <button class="btn">Enroll Now</button>  
+                            </div>
+                            <div class="includes">
+                                <p class="includes__title">Includes:</p>
+                                <ul class="includes__list">
+                                    <i class="check check_light"></i><li class="includes__items">All 100+ Courses  <a href="" class="info-link includes__info-link">?</a></li>
+                                    <i class="check check_light"></i><li class="includes__items">All 4 Certificate Programs  <a href="" class="info-link includes__info-link">?</a></li>
+                                    <i class="check check_light"></i><li class="includes__items">Excel, PPT, and PDF Files</li>
+                                    <i class="check check_light"></i><li class="includes__items">Digital Blockchain Verified Certificates</li>
+                                </ul>
+                            </div>
+                            
+                        </div>           
+                    </div>
+                    <div class="card card_primary">
+                        <div class="card__head card__head_primary">Most benefits!</div>
+                        <div class="card__holder">
+                            <p class="card__top-text">All Access Membership</p>
+                                <h3 class="card__header">Full-Immersion</h3>
+                                <p class="card__help-text">Everything in the Basic plan, plus more</p>
+                                <div class="card__primary-price">
+                                    <p class="card__primary-text"><span class="card__cost card__cost_primary">$77 <b class="card__cost card__cost_smaller-primary">/month </b></span>(pay annually — $924 / year)</p>
+                                </div>             
+                                <div class="card__divider card__divider_primary">
+                                    <button class="btn btn_primary">Enroll Now</button>  
+                                  </div>
+                                <div class="includes">
+                                    <p class="includes__title">Everything in Basic, plus:</p>
+                                    <ul class="includes__list">              
+                                        <i class="check check_primary"></i><li class="includes__items">Capital IQ & EIKON Partner Integrations</li>
+                                        <i class="check check_primary"></i><li class="includes__items">Premium Email Support   <a href="" class="info-link includes__info-link">?</a></li>
+                                        <i class="check check_primary"></i><li class="includes__items">Model Review & Feedback   <a href="" class="info-link includes__info-link">?</a></li>
+                                        <i class="check check_primary"></i><li class="includes__items">Additional Case Studies   <a href="" class="info-link includes__info-link">?</a></li>
+                                        <i class="check check_primary"></i><li class="includes__items">Resume & Cover Letter Review</li>
+                                        <i class="check check_primary"></i><li class="includes__items">A FREE Modeling Competition Entry</li>
+                                    </ul>
+                                </div>    
+                        </div>    
+                    </div>           
+                </div>  
+            </div>   
+        </section>
+        <!---------------------------- Card Section ---------------------------->
+
+        <!---------------------------- Table Section ---------------------------->
+        <section>
+            <div class="container">
+                <div class="table-wrapper">
+                    <table class="table">
+                        <tr class="table__row">
+                           <th class="table__head"></th>
+                            <th class="table__head table__head_main">
+                                <p class="table__text table__text_smaller">All-Access Membership</p>
+                                <h4 class="table__subheader">Basic</h4>
+                                <p class="table__text table__text_smaller">$564 / year</p>
+                            </th>
+                            <th class="table__head table__head_primary">
+                                <p class="table__text table__text_smaller">All-Access Membership</p>
+                                <h4 class="table__subheader">Full-Immersion</h4>
+                                <p class="table__text table__text_smaller">$924 / year</p>
+                            </th> 
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__data">
+                                <div class="table__data_flex">
+                                   <p class="table__text">All 100+ Courses</p>
+                                    <a href="" class="info-link">?</a> 
+                                </div>
+                            </td>
+                            <td class="table__data"><i class="incl main_incl"></i></td>
+                            <td class="table__data"> <i class="incl primary_incl"></i></td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__data">
+                                <div class="table__data_flex">
+                                    <p class="table__text">All Certificate Programs</p>
+                                    <a href="" class="info-link">?</a>
+                                </div>
+                            </td>
+                            <td class="table__data"><i class="incl main_incl"></i></td>
+                            <td class="table__data"><i class="incl primary_incl"></i></td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__data">
+                                <p class="table__text">Quizzes, Assignments, and Tests</p>
+                            </td>
+                            <td class="table__data"><i class="incl main_incl"></i></td>
+                            <td class="table__data"><i class="incl primary_incl"></i></td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__data">
+                                <p class="table__text">Excel, PPT, and PDF Files</p>
+                            </td>
+                            <td class="table__data"><i class="incl main_incl"></i></td>
+                            <td class="table__data"><i class="incl primary_incl"></i></td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__data">
+                                <p class="table__text">Digital Blockchain Verified Certificate</p>
+                            </td>
+                            <td class="table__data"><i class="incl main_incl"></i></td>
+                            <td class="table__data"><i class="incl primary_incl"></i></td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__data">
+                                <p class="table__text">Another Shared Benefit</p>
+                            </td>
+                            <td class="table__data"><i class="incl main_incl"></i></td>
+                            <td class="table__data"><i class="incl primary_incl"></i></td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__data">
+                                <p class="table__text">Another Shared Benefit</p>
+                            </td>
+                            <td class="table__data"><i class="incl main_incl"></i></td>
+                            <td class="table__data"><i class="incl primary_incl"></i></td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__data">
+                                <p class="table__text">Another Shared Benefit</p>
+                            </td>
+                            <td class="table__data"><i class="incl none_incl"></i></td>
+                            <td class="table__data"><i class="incl primary_incl"></i></td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__data">
+                                <div class="table__data_flex">
+                                    <p class="table__text">Exclusive Partner Integrations</p>
+                                    <a href="" class="info-link">?</a>
+                                </div>
+                            </td>
+                            <td class="table__data"><i class="incl none_incl"></i></td>
+                            <td class="table__data"><i class="incl primary_incl"></i></td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__data">
+                                <div class="table__data_flex">
+                                    <p class="table__text">Premium Email Support</p>
+                                    <a href="" class="info-link">?</a>
+                                </div>
+                            </td>
+                            <td class="table__data"><i class="incl none_incl"></i></td>
+                            <td class="table__data"><i class="incl primary_incl"></i></td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__data">
+                                <div class="table__data_flex">
+                                    <p class="table__text">Model Review & Feedback</p>
+                                    <a href="" class="info-link">?</a>
+                                </div>
+                            </td>
+                            <td class="table__data"><i class="incl none_incl"></i></td>
+                            <td class="table__data"><i class="incl primary_incl"></i></td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__data">
+                                <div class="table__data_flex">
+                                    <p class="table__text">Additional Case Studies</p>
+                                    <a href="" class="info-link">?</a>
+                                </div>
+                            </td>
+                            <td class="table__data"><i class="incl none_incl"></i></td>
+                            <td class="table__data"><i class="incl primary_incl"></i></td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__data">
+                                <div class="table__data_flex">
+                                    <p class="table__text">Résumé & Cover Letter Review</p>
+                                    <a href="" class="info-link">?</a>
+                                </div>
+                            </td>
+                            <td class="table__data"><i class="incl none_incl"></i></td>
+                            <td class="table__data"><i class="incl primary_incl"></i></td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__data">
+                                <p class="table__text">One FREE Financial Modeling Competition Entry</p>
+                            </td>
+                            <td class="table__data"><i class="incl none_incl"></i></td>
+                            <td class="table__data"><i class="incl primary_incl"></i></td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__data">  
+                            </td>
+                            <td class="table__data table__data_bigger">
+                                <div class="table__data-cont">
+                                    <h4>Basic</h4>
+                                    <p class="table__text">$564 / year</p>
+                                    <button class="btn">Enroll Now</button>
+                                </div> 
+                            </td>
+                            <td class="table__data table__data_bigger">
+                                <div class="table__data-cont">
+                                    <h4>Full-Immersion</h4>
+                                    <p class="table__text">$847 / year</p>
+                                    <button class="btn table__btn">Enroll Now</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>    
+            </div>
+        </section>
+        <!---------------------------- Table Section ---------------------------->
+
+        <!---------------------------- FAQ Section ---------------------------->
+        <section>
+            <div class="container">
+                <div class="faq-container">
+                    <h2 class="faq__header">Frequently Asked Questions</h2>
+                    <ul class="faq__list">
+                        <li class="faq__item">
+                            <div class="faq__menu">
+                                <p class="faq_question">Can I download the Excel files and financial modeling templates?</p>
+                                <i class="faq__show"></i>
+                            </div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__menu">
+                                <p class="faq_question">How long do I have to complete the course?</p>
+                                <i class="faq__show"></i>
+                            </div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__menu">
+                                <p class="faq_question">Are courses verified?</p>
+                                <i class="faq__show"></i>
+                            </div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__menu">
+                                <p class="faq_question">Are there additional fees or costs? </p>
+                                <i class="faq__show"></i>
+                            </div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__menu">
+                                <p class="faq_question">What currency are your courses priced in?</p>
+                                <i class="faq__show"></i>
+                            </div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__menu">
+                                <p class="faq_question">How do I earn my certificates?</p>
+                                <i class="faq__show"></i>
+                            </div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__menu">
+                                <p class="faq_question">Can I email the instructor if I have questions?</p>
+                                <i class="faq__show"></i>
+                            </div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__menu">
+                                <p class="faq_question">Wil these courses help me advanced my career?</p>
+                                <i class="faq__show"></i>
+                            </div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__menu">
+                                <p class="faq_question">More questions?</p>
+                                <i class="faq__show"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!---------------------------- FAQ Section ---------------------------->
+
+        <!---------------------------- Review Section ---------------------------->
+        <section>
+            <div class="container">
+                <div class="reivews">
+                    <h2 class="reivews__header">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at erat eget eros aliquam mattis </h2>
+                    <div class="carousel__content">
+                        <button class="btn-slide carousel__btn carousel__btn_prev" id="btn_prev"></button>
+                        <div class="carousel-content">
+                            <div class="card-review">
+                                <div class="card-review__avatar"></div>
+                                <div class="card-review__data">
+                                    <p class="card-review__name">John Doe</p>
+                                    <p class="card-review__job">Financial Controller</p>
+                                </div>
+                                <p class="card-review__review-text">"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed natus a mollitia voluptas. Incidunt natus dolorem tempore iusto perferendis, minima error provident mollitia rem distinctio quod dolore"</p>
+                                <a href="" class="card-review__read-more">Read more</a>
+                            </div>
+                            <div class="card-review">
+                                <div class="card-review__avatar"></div>
+                                <div class="card-review__data">
+                                    <p class="card-review__name">John Doe</p>
+                                    <p class="card-review__job">Financial Controller</p>
+                                </div>   
+                                <p class="card-review__review-text">"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed natus a mollitia voluptas. Incidunt natus dolorem tempore iusto perferendis, minima error provident mollitia rem distinctio quod dolore"</p>
+                                <a href="" class="card-review__read-more">Read more</a>
+                            </div>
+                            <div class="card-review">
+                                <div class="card-review__avatar"></div>
+                                <div class="card-review__data">
+                                    <p class="card-review__name">John Doe</p>
+                                    <p class="card-review__job">Financial Controller</p>
+                                </div>
+                                <p class="card-review__review-text">"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed natus a mollitia voluptas. Incidunt natus dolorem tempore iusto perferendis, minima error provident mollitia rem distinctio quod dolore"</p>
+                                <a href="" class="card-review__read-more">Read more</a>
+                            </div>
+                            
+                        </div>
+                        <div class="indicators">
+                            <div class="carousel__indicator carousel__indicator_active"></div>
+                            <div class="carousel__indicator"></div>
+                            <div class="carousel__indicator"></div>
+                        </div>
+                            
+                        <button class="btn-slide carousel__btn carousel__btn_next" id="btn_next"></button>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </section>
+        <!---------------------------- Review Section ---------------------------->
+    </main>
+    <section>
+        
+    </section>
+    <script src="./js/script.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+.input {
+    width: 28.63vw;
+    height: 2.5em;
+    padding: 0.92em 1.2em 0.75em 2.93em;
+    color: $neutral01;
+    background-color:transparent;
+    outline: none;
+    border: 1px solid $neutral01;
+    border-radius: 20px;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.btn {
+    width: 12vw;
+    height: 2.7em;
+    color: $neutral01;
+    background-color: $main;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'OpenSans-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 1.125em;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.06), 0px 3px 6px rgba(0, 0, 0, 0.04);
+}
+.btn:hover,
+.btn-link:hover,
+.btn-slide:hover {
+    opacity: 0.8;
+}
+.btn-link {
+    font-family: 'OpenSans-Bold';
+    border: 1px solid $neutral01;
+    border-radius: 5px;
+    text-decoration: none;
+    color: $neutral01;
+    padding-top: 8px;
+    width: 9.1vw;
+    height: 2.58em;
+    display: inline-block;
+    text-align: center;
+}
+.btn-slide {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    background-color: $main;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0px 3px 6px rgba(50, 113, 210, 0.1), 0px 10px 20px rgba(50, 113, 210, 0.15);   
+}
+.info-link {
+    display: inline-block;
+    width: 18.6px;
+    height: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+    text-decoration: none;
+    color: $neutral01;
+    background-color: $main;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 0.1em;
+    position: relative;
+    transition: all 0.5s ease;
+}
+.info-link::after {
+    content: 'Default tooltip. Here you’ll find something on the left.';
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    padding: 16px;
+    line-height: 22.4px;
+    font-size: 1em;
+    top: -40px;
+    left: 35px;
+    width: 159px;
+    height: 68px;
+    background-color: rgba(30, 41, 57, 1);
+    border-radius: 4px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    display: none;
+    z-index: 2;
+}
+.info-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    top: -7px;
+    left: 19px;
+    border: 16px solid rgba(30, 41, 57, 1);
+    border-left-width: 0;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    display: none;
+}
+.info-link:hover::before,
+.info-link:hover::after {
+        display: block;
+    }
+
+@media screen and (min-width: 280px) and (max-width: 500px) {
+    .info-link::after {
+        content: 'Default tooltip. Here you’ll find something on the left.';
+        padding: 10px;
+        font-size: 0.8em;
+        top: -40px;
+        left: 35px;
+        width: 120px;
+    }
+}

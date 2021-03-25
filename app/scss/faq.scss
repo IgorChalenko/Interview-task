@@ -1,0 +1,86 @@
+.faq-container {
+    width: 97%;
+    background-color: $neutral01;
+    padding-left: 16vw;
+    margin-top: 11.5vh;
+    padding-top: 6.2em;
+    padding-bottom: 7em;
+}
+.faq__header {
+    margin-left: 5.8em;
+}
+.faq__list {
+    list-style: none;
+    padding-top: 0.8em; 
+}
+.faq__item {
+    height: 54px;
+}
+.faq__menu {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #EBEBEB;
+    cursor: pointer;
+}
+.faq__show {
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/spritesheet.png');
+    background-position: -3px -5px;
+    background-repeat: no-repeat;
+}
+.faq_question {
+    font-family: 'OpenSans-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 1.125em;
+    color: $text;
+}
+
+@media screen and (max-width: 1220px) {
+    .faq__header {
+        margin-left: 13vw;
+    }
+}
+@media screen and (max-width: 790px) {
+    .faq__header {
+        margin-left: 5vw;
+    }
+    .faq-container {
+        width: 95%;
+        padding-left: 5vw;
+        margin-top: 4.5vh;
+        padding-top: 1em;
+        padding-bottom: 3em;
+    }
+    .faq_question {
+        font-size: 1em;
+    }
+}
+@media screen and (min-width: 280px) and (max-width: 500px) {
+    .faq-container {
+        width: 100%;
+        padding-left: 3vw;
+    }
+    .faq__header {
+        text-align: center;
+        margin-left: 0;
+        line-height: 2em;
+        margin-bottom: 1em;
+    }
+    .faq__list {
+        list-style: none;
+        padding-top: 0.4em; 
+    }
+    .faq__item {
+        height: 54px;
+    }
+    .faq__menu {
+        width: 85vw;
+    }
+    .faq_question {
+        font-size: 0.8em;
+    }
+}

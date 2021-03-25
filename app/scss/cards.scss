@@ -1,0 +1,305 @@
+.card-deck {
+    width: 100%;
+    height: 95vh;
+    padding-left: 9vw;
+    padding-right: 9vw;
+    position: relative;
+}
+.card {
+    width: 39.78vw;
+    height: 110.98vh;
+    border-radius: 8px;
+    background: $neutral01;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.06), 0px 3px 6px rgba(0, 0, 0, 0.04);
+    
+}
+.card_light {
+    position: absolute;
+    top: -31vh;
+    left: 9.1vw;
+}
+.card__head {
+    width: 100%;
+    height: 5vh;
+    color: $neutral01;
+    font-family: 'OpenSans-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 0.85em;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    padding-top: 0.8vh;
+}
+.card__head_blue {
+    background-color: $main;
+    
+}
+.card__holder {
+    padding-left: 7.3vh;
+}
+.card__top-text {
+    margin-top: 7.1vh;
+    color: $primary;
+}
+.card__header {
+    color: $primary;
+    line-height: 32px;
+    font-size: 1.5em;
+    margin-top: 1vh;
+}
+.card__help-text {
+    font-size: 1em;
+    margin-top: 3.1vh;
+}
+.card__plan {
+    font-size: 1.125em;
+    color: $primary;
+    margin-top: 3.9vh;
+}
+.card__price {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.2em;
+    padding-left: 1.78em;
+}
+.card__radio {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+    color: $neutral05;
+}
+.card__cost {
+    font-family: 'OpenSans-Bold', sans-serif;
+    font-weight: 700;
+    color: $neutral05;
+    font-size: 2.23em;
+}
+.card__cost_smaller {
+    font-size: 0.55em; 
+}
+.card__radio {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.card__radio::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: $neutral03;
+    border-radius: 50%;
+    top: 16px;
+    left: -30px;
+}
+.card__radio:first-of-type:after {
+    content: "Save 30%!";
+    position: absolute;
+    color: $main;
+    text-align: center;
+    padding-top: 0.4em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+    width: 82px;
+    top: 16px;
+    right: 55px;
+    height: 19px;
+    background-color: #E9F0FA;
+    border-radius: 16px;
+}
+.card__price input[type="radio"]:checked + .card__radio::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: $neutral01;
+    border: 5px solid $main;
+    border-radius: 50%;
+    top: 16px;
+    left: -30px;
+}
+.card__price input[type="radio"]:checked + .card__radio,
+.card__price input[type="radio"]:checked + .card__radio > .card__cost, 
+.card__price input[type="radio"]:checked + .card__radio > .card__cost > .card__cost_smaller {
+    color: $primary;
+}
+
+.card__divider {
+    max-width: 28em;
+    max-height: 4.5em;
+    margin-top: 0.7em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid $neutral03;
+}
+.includes__title {
+    margin-top: 1.5em;
+    color: $neutral05;
+}
+.includes__list {
+    list-style: none;
+    padding-top: 1.68em;
+}
+.check {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 0.76em;
+    background-image: url('../img/spritesheet.png');
+    background-repeat: no-repeat;
+}
+.check_light {
+    
+    background-position: -6px -73px; 
+}
+.includes__items {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.6em;
+    color: $neutral05;
+    display: inline-block;
+    width: 90%;
+    margin-bottom: 1em;
+}
+.includes__info-link {
+    line-height: 1em;
+}
+.card_primary {
+    position: absolute;
+    right: 7.8vw;
+    top: -15.5vh;
+    height: 108.5vh;
+}
+.card__head_primary {
+    background-color: $primary;
+}
+.check_primary {
+    background-position: -70px -5px;
+}
+.card__primary-price {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.3em;
+    color: $primary;
+}
+.card__primary-text {
+    color: $primary;
+    font-size: 0.9em;
+
+}
+.card__cost_primary,
+.card__cost_smaller-primary {
+    color: $primary;
+}
+.card__cost_smaller-primary{
+    font-size: 0.55em;
+}
+.card__divider.card__divider_primary {
+    max-height: 5.5em;
+    padding-top: 1.2em;
+}
+.btn.btn_primary {
+    background-color: $primary;
+    
+}
+@media screen and (max-width: 1220px) {
+    .card__radio:first-of-type:after {
+        width: 80px;
+        top: 40px;
+        right: 25px;
+    }
+}
+@media screen and (max-width: 790px) {
+    .card-deck {
+        height: 170vh;
+        padding: 0;
+    }
+    .card {
+        width: 65%;
+        height: 100vh;       
+    }
+    .card_light {
+        top: -40vh;
+        left: 18vw;
+    }
+    .card_primary {
+        right: 17vw;
+        top: 65vh;
+        height: 108.5vh;
+    }
+    .card__divider .btn {
+        width: 25vh;
+    }
+    
+}
+@media screen and (min-width: 280px) and (max-width: 500px) {
+    .card-deck {
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: 0 0 0 0;        
+    }
+    .card_light,
+    .card_primary {
+        position: initial;
+    }
+    .card__head {
+        font-size: 2vh;
+        border-radius: 0;
+    }
+    .card__holder {
+        padding-left: 7.3vw;
+    }
+    .card__top-text {
+        margin-top: 1.5vh;
+    }
+    .card__help-text {
+        font-size: 2.5vh;
+        margin-top: 2.1vh;
+    }
+    .card__header {
+        font-size: 4vh;
+        line-height: 2vh;
+    }
+    .card__plan {
+        font-size: 3vh;
+        margin-top: 2.2vh;
+    }
+    .card__price {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2vh;
+        padding-left: 1.78em;
+    }
+    .card__radio {
+        font-size: 2vh;
+    }
+    .card__radio:first-of-type:after {
+        display: none;
+    }
+    .card__divider {
+        max-width: 85vw;
+    }
+    .includes__title {
+        margin-top: 1.5vh;
+    }
+    .includes__list {
+        padding-top: 1.68vh;
+    }
+    .includes__items {
+        font-size: 2.5vh;
+    }
+    .includes__info-link {
+        line-height: 2vh;
+    }
+    .card__primary-price {
+        margin-top: 3vh;
+    }
+    .card__divider.card__divider_primary {
+        padding-top: 2vh;
+    }
+}

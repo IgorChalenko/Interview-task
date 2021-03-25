@@ -1,0 +1,62 @@
+$neutral01: rgba(255, 255, 255, 1);
+$bacground: #E5E5E5;
+$main: rgba(50, 113, 210, 1);
+$primary: rgba(19, 46, 87, 1);
+$light: rgba(233, 240, 250, 1);
+$neutral05: rgba(87, 89, 93, 1);
+$neutral04: rgba(114, 116, 119, 1);
+$neutral03: rgba(221, 222, 224, 1);
+$neutral02: rgba(248, 249, 250, 1);
+$text: rgba(103, 103, 103, 1);
+$uiInfo: rgba(37, 162, 175, 1);
+$dark: rgba(30, 41, 57, 1);
+
+@import '../fonts/font.css';
+@import 'header';
+@import 'cards.scss';
+@import 'table.scss';
+@import 'ui-kit.scss';
+@import 'faq.scss';
+@import 'review.scss';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body {
+    background: $neutral02;
+}
+h1, h2, h3, h4 {
+    font-family: 'OpenSans-Bold', sans-serif;
+    font-weight: 700;
+}
+h2, h3, h4 {
+    color: $primary;  
+}
+
+h2 {
+    font-size: 2em;
+    line-height: 2.75em;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 2em;
+}
+h4 {
+    font-size: 1.125em;
+}
+p {
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 1em;
+    line-height: 1.6em;
+    font-weight: 400;
+}
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.hidden {
+    display: none;
+}
